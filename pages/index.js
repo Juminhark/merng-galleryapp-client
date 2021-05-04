@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header';
+import Nav from '../components/Nav';
+import Results from '../components/Results';
 
 export default function Home() {
 	return (
@@ -9,13 +11,9 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<h1>Lets build Hulu 2.0</h1>
-
-			{/* Header */}
 			<Header />
-			{/* Nav */}
-
-			{/* Results */}
+			<Nav />
+			<Results />
 		</div>
 	);
 }

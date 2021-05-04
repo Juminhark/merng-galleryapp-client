@@ -27,3 +27,46 @@ purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}']
 @tailwind components;
 @tailwind utilities;
 ```
+
+## [tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+
+```sh
+> yarn add @heroicons/react
+```
+
+## [tailwind-scrollbar-hide](https://www.npmjs.com/package/tailwind-scrollbar-hide)
+
+```sh
+> yarn add tailwind-scrollbar-hide
+```
+
+```js
+// tailwind.config.js
+plugins: [require('tailwind-scrollbar-hide')];
+
+// Nav.js
+
+import requests from '../utils/requests';
+
+function Nav() {
+	return (
+		<nav>
+			<div className="scrollbar-hide">
+				{Object.entries(requests).map(([key, { title, url }]) => (
+					<h2 key={key}>{title}</h2>
+				))}
+			</div>
+		</nav>
+	);
+}
+
+export default Nav;
+```
+
+## [horizontally scroll](https://tailwindcss.com/docs/overflow#scroll-horizontally-if-needed)
+
+- 움직일때는 shift 누르고 마우스 scroll
+
+```js
+<div class="overflow-x-scroll ...">QrLmmW69vMQD...</div>
+```
