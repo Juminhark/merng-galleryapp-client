@@ -46,3 +46,34 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ```
+
+## apollo-graphql client
+
+```js
+// apollo-client.js
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
+const client = new ApolloClient({
+	uri: 'http://localhost:4000/',
+	cache: new InMemoryCache(),
+});
+
+export default client;
+```
+
+```js
+// _app.js
+import { ApolloProvider } from '@apollo/client';
+import client from '../apollo-client';
+import '../styles/globals.css';
+
+function MyApp({ Component, pageProps }) {
+	return (
+		<ApolloProvider client={client}>
+			<Component {...pageProps} />
+		</ApolloProvider>
+	);
+}
+
+export default MyApp;
+```
