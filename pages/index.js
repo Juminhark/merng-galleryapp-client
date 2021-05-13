@@ -18,12 +18,6 @@ export default function Home() {
 					<Users />
 				</ClientOnly>
 			</main>
-
-			<footer>
-				<a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-					Powered by <img src="/vercel.svg" alt="Vercel Logo" />
-				</a>
-			</footer>
 		</div>
 	);
 }
