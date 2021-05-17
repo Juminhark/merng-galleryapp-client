@@ -10,10 +10,10 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
+			<h1>Lets build Gallery</h1>
+			{/* Header */}
+
 			<main>
-				<h1>
-					Welcome to <a href="https://nextjs.org">Next.js!</a>
-				</h1>
 				<ClientOnly>
 					<Users />
 				</ClientOnly>

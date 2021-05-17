@@ -7,7 +7,7 @@
 > cd my-project
 ```
 
-## Setting up Tailwind CSS
+## Setting up Tailwind CSS && Include Tailwind in your CSS
 
 ```sh
 > npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
@@ -29,18 +29,6 @@ module.exports = {
 	plugins: [],
 };
 
-// postcss.config.js
-module.exports = {
-	plugins: {
-		tailwindcss: {},
-		autoprefixer: {},
-	},
-};
-```
-
-## Include Tailwind in your CSS
-
-```js
 /* ./styles/globals.css */
 @tailwind base;
 @tailwind components;
