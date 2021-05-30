@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import ClientOnly from '../components/ClientOnly';
 import Users from '../components/Users';
 
 export default function Home() {
@@ -14,9 +13,7 @@ export default function Home() {
 			{/* Header */}
 
 			<main>
-				<ClientOnly>
-					<Users />
-				</ClientOnly>
+				<Users />
 			</main>
 		</div>
 	);
